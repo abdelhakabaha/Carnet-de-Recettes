@@ -23,4 +23,6 @@ Route::delete('/delete/{recette:titre}', [RecetteController::class, 'destroy']);
 Route::post('/edit/{recette:titre}', [RecetteController::class, 'edit']);
 Route::put('/update/{recette}', [RecetteController::class, 'update'])->name("recettes.update");
 Route::get('/search', [RecetteController::class, 'search'])->name('search');
+Route::get('/single_recette/{recettes}', [RecetteController::class, 'showSingle'])->name('show_single');
+
 

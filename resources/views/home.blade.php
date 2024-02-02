@@ -82,7 +82,9 @@
         <div class="rounded overflow-hidden shadow-lg text-black w-[300px]">
             <img class="w-full" src="/storage/{{ $recette->image }}" alt="Mountain">
             <div class="px-6 py-4">
+            <a href="{{route('show_single',$recette->id)}}"> 
                 <div class="font-bold text-xl mb-2">{{ $recette->titre }}</div>
+            </a>
                 <p class=" text-base text-black">
                     {{ $recette->ingredient }}
                 </p>

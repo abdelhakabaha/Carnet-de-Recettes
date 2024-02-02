@@ -51,6 +51,12 @@ class RecetteController extends Controller
     {
         
     }
+    
+    public function showSingle(Recette $recettes)
+    {
+        return view('recette_single', compact('recettes'));   
+    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -105,4 +111,5 @@ class RecetteController extends Controller
         // Return the view with the search results
         return view('search_results', ['results' => $results, 'query' => $query]);
     }
+
 }
